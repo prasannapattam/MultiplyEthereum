@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neth2RC4", "Neth2RC4\Neth2RC4.csproj", "{8841CDB1-C560-4DEA-974B-F9846D12C87A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contracts", "Contracts", "{E7A2C29E-12F9-4873-8037-5DACA5633F68}"
+	ProjectSection(SolutionItems) = preProject
+		Contracts\Multiplier.sol = Contracts\Multiplier.sol
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestChain", "TestChain", "{2E9C2691-65EC-4F4F-AE7D-B1316D7D2192}"
+	ProjectSection(SolutionItems) = preProject
+		TestChain\EthConsoleCommands.txt = TestChain\EthConsoleCommands.txt
+		TestChain\genesis_dev.json = TestChain\genesis_dev.json
+		TestChain\geth.exe = TestChain\geth.exe
+		TestChain\solc.exe = TestChain\solc.exe
+		TestChain\startgeth.bat = TestChain\startgeth.bat
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DevChain", "DevChain", "{33AA115B-F3ED-4F97-A94B-00BC8573E79E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "keystore", "keystore", "{18CBC727-5F85-4600-B4B8-CE02650264D3}"
+	ProjectSection(SolutionItems) = preProject
+		TestChain\DevChain\keystore\UTC--2017-06-05T08-54-37.014773100Z--0bd615694d433424c292599f080bda45b0c257fc = TestChain\DevChain\keystore\UTC--2017-06-05T08-54-37.014773100Z--0bd615694d433424c292599f080bda45b0c257fc
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8841CDB1-C560-4DEA-974B-F9846D12C87A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8841CDB1-C560-4DEA-974B-F9846D12C87A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8841CDB1-C560-4DEA-974B-F9846D12C87A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8841CDB1-C560-4DEA-974B-F9846D12C87A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{33AA115B-F3ED-4F97-A94B-00BC8573E79E} = {2E9C2691-65EC-4F4F-AE7D-B1316D7D2192}
+		{18CBC727-5F85-4600-B4B8-CE02650264D3} = {33AA115B-F3ED-4F97-A94B-00BC8573E79E}
+	EndGlobalSection
+EndGlobal

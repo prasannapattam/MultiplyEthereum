@@ -1,0 +1,20 @@
+var accountAddress = "0x0bd615694d433424c292599f080bda45b0c257fc";
+personal.unlockAccount(accountAddress, "password");
+var abi = [{"constant":true,"inputs":[{"name":"num","type":"uint256"}],"name":"multiply","outputs":[{"name":"ret","type":"uint256"}],"payable":false,"type":"function"}];
+var bytecode = "0x60606040523415600b57fe5b5b60918061001a6000396000f300606060405263ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663c6888fa181146039575bfe5b3415604057fe5b6049600435605b565b60408051918252519081900360200190f35b600781025b9190505600a165627a7a7230582012ddfeaf15091615ed120b8d92922ab82f3445b6ef65178f14af34dbb29059f30029";
+var multiplierContract = eth.contract(abi);
+var instance = multiplierContract.new({
+   from:accountAddress,
+   data:bytecode,
+   gas:300000}, function(err, contractInstance){
+    if(!err) {
+       if(!contractInstance.address) {
+           console.log("Tx Hash: " + contractInstance.transactionHash) // The hash of the transaction, which deploys the contract
+       } else {
+           console.log("Address: " + contractInstance.address) // the contract address
+       }
+    }
+});
+
+ 
+instance.multiply(40);
