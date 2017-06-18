@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics;
+using System.IO;
 
 namespace Neth2RC4
 {
@@ -9,5 +11,6 @@ namespace Neth2RC4
             MultiplyTest test = new MultiplyTest();
             test.Run().Wait();
         }
+
     }
 }
